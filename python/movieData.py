@@ -1,6 +1,10 @@
+import os
+baseFileLocation = os.path.dirname(os.path.abspath(__file__))
+fileLocation = os.path.join(baseFileLocation,"data.csv")
+
 
 def getGenre():
-    listOfGenres = ["Romantic","Action","Horror","Sci-Fi","Fantasy"]
+    listOfGenres = ["Horror","Action","Fantasy","Romance","Sci_Fi"]
     return listOfGenres
 
 def getMovie(genre):
@@ -18,7 +22,7 @@ def getMovie(genre):
 # Adding and Removing Movies
 import csv
 
-fileLocation = 'data.csv'
+
 
 def addMovie(MovieID,MovieGenre,MovieName,MovieDuration,MovieTime1,MovieTime2,MovieDate1,MovieDate2):
     with open(fileLocation,"a") as movieData:

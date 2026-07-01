@@ -1,3 +1,8 @@
+import os
+baseFileLocation = os.path.dirname(os.path.abspath(__file__))
+fileLocation = os.path.join(baseFileLocation,"seat.csv")
+
+
 def getFreshSeat():
     allOfTheSeat = [
     [1,2,3,4,5,6,7,8,9,10], #A (1.Num) (1.9 = A9)

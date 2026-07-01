@@ -56,8 +56,22 @@ def runBookAMovie():
 
                     print("Available Seats")
                     seatData.printSeat(seatData.getSeat())
-                    userDesiredSeatRow = input("Which seat row do you prefer? (A-J): ")
-                    userDesiredSeatNumber = int(input("Which seat number do you prefer? (1-10): "))
+                    while True:
+                        userDesiredSeatRow = input("Which seat row do you prefer? (A-J): ").upper()
+                        if userDesiredSeatRow not in ["A","B","C","D","E","F","G","H","I","J"]:
+                            print("Invalid Choice.")
+                        else:
+                            break
+
+                    while True:
+                        try:
+                            userDesiredSeatNumber = int(input("Which seat number do you prefer? (1-10): "))
+                            if userDesiredSeatNumber not in [1,2,3,4,5,6,7,8,9,10]:
+                                print("Invalid Choice.")
+                            else:
+                                break
+                        except:
+                            print("Invalid Choice.")
                     seatData.bookSeat(userDesiredSeatRow, userDesiredSeatNumber)
                     SomeList.append(userDesiredSeatRow)
                     SomeList.append(userDesiredSeatNumber)
@@ -107,8 +121,22 @@ def runBookAMovie():
 
                     print("Available Seats")
                     seatData.printSeat(seatData.getSeat())
-                    userDesiredSeatRow = input("Which seat row do you prefer? (A-J): ")
-                    userDesiredSeatNumber = int(input("Which seat number do you prefer? (1-10): "))
+                    while True:
+                        userDesiredSeatRow = input("Which seat row do you prefer? (A-J): ").upper()
+                        if userDesiredSeatRow not in ["A","B","C","D","E","F","G","H","I","J"]:
+                            print("Invalid Choice.")
+                        else:
+                            break
+
+                    while True:
+                        try:
+                            userDesiredSeatNumber = int(input("Which seat number do you prefer? (1-10): "))
+                            if userDesiredSeatNumber not in [1,2,3,4,5,6,7,8,9,10]:
+                                print("Invalid Choice.")
+                            else:
+                                break
+                        except:
+                            print("Invalid Choice.")
                     seatData.bookSeat(userDesiredSeatRow, userDesiredSeatNumber)
                     SomeList.append(userDesiredSeatRow)
                     SomeList.append(userDesiredSeatNumber)
@@ -158,8 +186,22 @@ def runBookAMovie():
 
                     print("Available Seats")
                     seatData.printSeat(seatData.getSeat())
-                    userDesiredSeatRow = input("Which seat row do you prefer? (A-J): ")
-                    userDesiredSeatNumber = int(input("Which seat number do you prefer? (1-10): "))
+                    while True:
+                        userDesiredSeatRow = input("Which seat row do you prefer? (A-J): ").upper()
+                        if userDesiredSeatRow not in ["A","B","C","D","E","F","G","H","I","J"]:
+                            print("Invalid Choice.")
+                        else:
+                            break
+
+                    while True:
+                        try:
+                            userDesiredSeatNumber = int(input("Which seat number do you prefer? (1-10): "))
+                            if userDesiredSeatNumber not in [1,2,3,4,5,6,7,8,9,10]:
+                                print("Invalid Choice.")
+                            else:
+                                break
+                        except:
+                            print("Invalid Choice.")
                     seatData.bookSeat(userDesiredSeatRow, userDesiredSeatNumber)
                     SomeList.append(userDesiredSeatRow)
                     SomeList.append(userDesiredSeatNumber)
@@ -209,8 +251,22 @@ def runBookAMovie():
 
                     print("Available Seats")
                     seatData.printSeat(seatData.getSeat())
-                    userDesiredSeatRow = input("Which seat row do you prefer? (A-J): ")
-                    userDesiredSeatNumber = int(input("Which seat number do you prefer? (1-10): "))
+                    while True:
+                        userDesiredSeatRow = input("Which seat row do you prefer? (A-J): ").upper()
+                        if userDesiredSeatRow not in ["A","B","C","D","E","F","G","H","I","J"]:
+                            print("Invalid Choice.")
+                        else:
+                            break
+
+                    while True:
+                        try:
+                            userDesiredSeatNumber = int(input("Which seat number do you prefer? (1-10): "))
+                            if userDesiredSeatNumber not in [1,2,3,4,5,6,7,8,9,10]:
+                                print("Invalid Choice.")
+                            else:
+                                break
+                        except:
+                            print("Invalid Choice.")
                     seatData.bookSeat(userDesiredSeatRow, userDesiredSeatNumber)
                     SomeList.append(userDesiredSeatRow)
                     SomeList.append(userDesiredSeatNumber)
@@ -260,8 +316,22 @@ def runBookAMovie():
 
                     print("Available Seats")
                     seatData.printSeat(seatData.getSeat())
-                    userDesiredSeatRow = input("Which seat row do you prefer? (A-J): ")
-                    userDesiredSeatNumber = int(input("Which seat number do you prefer? (1-10): "))
+                    while True:
+                        userDesiredSeatRow = input("Which seat row do you prefer? (A-J): ").upper()
+                        if userDesiredSeatRow not in ["A","B","C","D","E","F","G","H","I","J"]:
+                            print("Invalid Choice.")
+                        else:
+                            break
+
+                    while True:
+                        try:
+                            userDesiredSeatNumber = int(input("Which seat number do you prefer? (1-10): "))
+                            if userDesiredSeatNumber not in [1,2,3,4,5,6,7,8,9,10]:
+                                print("Invalid Choice.")
+                            else:
+                                break
+                        except:
+                            print("Invalid Choice.")
                     seatData.bookSeat(userDesiredSeatRow, userDesiredSeatNumber)
                     SomeList.append(userDesiredSeatRow)
                     SomeList.append(userDesiredSeatNumber)
@@ -293,6 +363,9 @@ def runBookAMovie():
 
 
 import ticket
+
+def validateInput(correctDataType,inputDataType):
+    pass
 
 
 def setComfirmationList(someList,action=None):

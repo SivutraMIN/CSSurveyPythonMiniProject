@@ -1,5 +1,6 @@
 import ticket
 import bookAMovie
+import menu
 
 someList = bookAMovie.getComfirmationList()
 print(f"You have book {someList[1]} at {someList[2]} on {someList[3]} with seat row {someList[4]} and seat number {someList[5]} ")
@@ -68,3 +69,10 @@ elif choice == "5":
 
 else:
     print("Invalid choice.")
+
+
+choice = input("Do you want to go back to menu ? (Y/N): ").lower()
+if choice == "y":
+    menu.runMenu()
+else:
+    exit()

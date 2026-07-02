@@ -2,8 +2,6 @@ import movieData
 import seatData
 
 def runBookAMovie():
-    result = None
-    redo = None
     while True:  # genre loop
         SomeList = []
 
@@ -365,6 +363,9 @@ def runBookAMovie():
 import ticket
 
 def validateInput(correctDataType,inputDataType):
+    pass
+
+def validateInput():
     pass
 
 

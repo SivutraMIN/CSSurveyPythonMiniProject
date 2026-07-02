@@ -9,7 +9,12 @@ def runMenu():
     print("2. Check Booking")
     print("3. Exit")
 
-    userChoice = int(input("What would you like to do?: "))
+    while True:
+        try:
+            userChoice = int(input("What would you like to do?: "))
+            break
+        except:
+            print("Invalid input. Please enter a number.")
 
     if userChoice == 3:
         exit()

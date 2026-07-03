@@ -12,6 +12,9 @@ def runMenu():
     while True:
         try:
             userChoice = int(input("What would you like to do?: "))
+            if userChoice not in [1, 2, 3]:
+                print("Invalid choice. Please enter a number between 1 and 3.")
+                continue
             break
         except:
             print("Invalid input. Please enter a number.")

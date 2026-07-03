@@ -19,10 +19,7 @@ def getMovie(genre):
     return resultMovieList
                 
 
-# Adding and Removing Movies
 import csv
-
-
 
 def addMovie(MovieID,MovieGenre,MovieName,MovieDuration,MovieTime1,MovieTime2,MovieDate1,MovieDate2):
     with open(fileLocation,"a") as movieData:

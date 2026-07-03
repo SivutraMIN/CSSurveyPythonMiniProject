@@ -18,7 +18,7 @@ def getFreshSeat():
     ]   
     return allOfTheSeat
 
-fileLocation = "seat.csv"
+
 import csv
 
 def setFreshSeat():

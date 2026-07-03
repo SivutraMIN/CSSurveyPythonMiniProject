@@ -14,6 +14,5 @@ import movieData
 # setting Fresh Seat
 # seatData.setFreshSeat()
 
-seatData.setFreshSeat()
 
 

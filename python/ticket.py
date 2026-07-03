@@ -1,6 +1,10 @@
 import bookAMovie
 import random
 
+import os
+baseFileLocation = os.path.dirname(os.path.abspath(__file__))
+fileLocation = os.path.join(baseFileLocation,"ticketStorage.csv")
+
 def generateTicket():
     someList = bookAMovie.getComfirmationList()
     ticket = f"{someList[2]}-{random.randint(0,1001)}"
@@ -10,7 +14,6 @@ def generateTicket():
 
 
 import csv
-fileLocation = "ticketStorage.csv"
 def addTicketToStorage(comfirmationList):
     with open(fileLocation,"w") as file:
         writer = csv.writer(file)

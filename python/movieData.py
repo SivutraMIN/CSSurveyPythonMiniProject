@@ -73,3 +73,5 @@ def print_available_movie (genre):
             f"{Number}. {movie[List][MovieName]} | {movie[List][MovieDuration]} mins | {movie[List][MovieTime1]} on {movie[List][MovieDate1]} | {movie[List][MovieTime2]} on {movie[List][MovieDate2]}")
         Number += 1
         List += 1
+
+        #latest version

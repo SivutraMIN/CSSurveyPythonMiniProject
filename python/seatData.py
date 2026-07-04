@@ -83,3 +83,6 @@ def printSeat(allOfTheSeat):
       print(f"[{colum}]", end=" ")
     print("\n")
     tempNumLetter+=1
+
+
+    #latest version

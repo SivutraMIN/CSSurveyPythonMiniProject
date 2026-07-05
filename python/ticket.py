@@ -15,12 +15,12 @@ def generateTicket():
 
 import csv
 def addTicketToStorage(comfirmationList):
-    with open(fileLocation,"w") as file:
+    with open(fileLocation,"w",newline="") as file:
         writer = csv.writer(file)
         writer.writerow(comfirmationList)
 
 def searchTicket(ticketID):
-    with open(fileLocation,"r") as file:
+    with open(fileLocation,"r",newline="") as file:
         reader = csv.reader(file)
         someRandomList = []
         for row in reader:

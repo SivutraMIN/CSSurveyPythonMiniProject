@@ -8,7 +8,7 @@ def getGenre():
     return listOfGenres
 
 def getMovie(genre):
-    with open(fileLocation,"r") as movieData:
+    with open(fileLocation,"r",newline="") as movieData:
         data = csv.reader(movieData)
         resultMovieList = []
         for row in data:
@@ -22,7 +22,7 @@ def getMovie(genre):
 import csv
 
 def addMovie(MovieID,MovieGenre,MovieName,MovieDuration,MovieTime1,MovieTime2,MovieDate1,MovieDate2):
-    with open(fileLocation,"a") as movieData:
+    with open(fileLocation,"a",newline="") as movieData:
         # movie = ['Movie_ID', 'Movie_Genre', 'Movie_Name', 'Movie_Duration', 'Movie_Time_1', 'Movie_Time_2', 'Movie_Date_1', 'Movie_Date_2']
 
         movie = [MovieID,MovieGenre,MovieName,MovieDuration,MovieTime1,MovieTime2,MovieDate1,MovieDate2]
@@ -31,7 +31,7 @@ def addMovie(MovieID,MovieGenre,MovieName,MovieDuration,MovieTime1,MovieTime2,Mo
         data.writerow(movie)
 
 def removeMovie(movieID):
-    with open(fileLocation,'r',newline='') as movieData:
+    with open(fileLocation,'r',newline="") as movieData:
         reader = csv.reader(movieData)
         bigAllMovie = []
         for row in reader:
@@ -39,7 +39,7 @@ def removeMovie(movieID):
                 continue
             bigAllMovie.append(row)
 
-    with open(fileLocation,"w") as movieData:
+    with open(fileLocation,"w",newline="") as movieData:
         writer = csv.writer(movieData)
         for row in bigAllMovie:
             writer.writerow(row)
